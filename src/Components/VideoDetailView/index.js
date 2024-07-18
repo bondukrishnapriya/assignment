@@ -36,7 +36,7 @@ class VideoDetailView extends Component {
   }
 
   formattedData = data => ({
-    id: data.video_Details.id,
+    id: data.video_details.id,
     title: data.video_details.title,
     videoUrl: data.video_details.video_url,
     thumbnailUrl: data.video_details.thumbnail_url,
@@ -44,7 +44,7 @@ class VideoDetailView extends Component {
     publishedAt: data.video_details.published_at,
     description: data.video_details.description,
     name: data.video_details.channel.name,
-    profileImageUrl: data.video_details.channnel.profile_image_url,
+    profileImageUrl: data.video_details.channel.profile_image_url,
     subscriberCount: data.video_details.channel.subscriber_count,
   })
 
@@ -100,7 +100,6 @@ class VideoDetailView extends Component {
         videoDetails={videoDetails}
         clickLiked={this.clickLiked}
         clickDisLiked={this.clikcDisLiked}
-        clickSaved={this.clikcSaved}
         isLiked={isLiked}
         isDisLiked={isDisLiked}
       />

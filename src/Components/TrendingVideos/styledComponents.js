@@ -1,20 +1,13 @@
-import {Link} from 'react-router-dom'
-
 import styled from 'styled-components'
 
-export const ItemLink = styled(Link)`
-  text-decoration: none;
-  width: 100%;
-`
-export const TrendingListItem = styled.li`
-  background: none;
-  width: 100%;
-  display: flex;
-  margin-bottom: 20px;
-`
 export const TitleContainer = styled.div``
 export const TrendingVideoTitle = styled.h1``
-export const TrendingContainer = styled.div``
+export const TrendingContainer = styled.div`
+  background-color: ${props => props.color};
+  min-height: 100vh;
+  margin-top: 60px;
+  overflow-y: auto;
+`
 export const TrendingThumbnailImage = styled.img`
   width: 100%;
 `
@@ -40,11 +33,7 @@ export const TrendingTitle = styled.p`
   font-size: 12px;
   color: ${props => props.color};
 `
-export const TrendingChannelName = styled.p`
-  font-family: 'Roboto';
-  font-size: 15px;
-  color: ${props => props.color};
-`
+
 export const TrendingViewsAndDate = styled.p`
   font-family: 'Roboto';
   font-size: 15px;
@@ -57,6 +46,20 @@ export const TrendingDot = styled.span`
   padding-left: 5px;
   padding-right: 5px;
 `
-export const LoaderContainer = styled.div``
-export const TrendingText = styled.h1``
-export const TrendingVideoList = styled.ul``
+export const LoaderContainer = styled.div`
+  display: flex;
+  font-size: 25px;
+  color: ${props => props.color};
+`
+export const TrendingText = styled.h1`
+  font-family: 'Roboto';
+  font-szie: 25px;
+  color: ${props => props.color};
+`
+export const TrendingVideoList = styled.ul`
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  margin: 8px;
+  paddin: 8px;
+`

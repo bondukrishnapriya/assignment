@@ -2,7 +2,7 @@ import {Link} from 'react-router-dom'
 
 import styled from 'styled-components'
 
-export const NavigationLgContainer = styled.nav`
+export const NavigationLgContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -54,8 +54,9 @@ export const ContactImage = styled.img`
   border-radius: 50px;
   margin-right: 10px;
 `
-export const ContactHeading = styled.h1`
+export const ContactHeading = styled.p`
   font-family: 'Roboto';
+  font-size: 35px;
 `
 export const ContactNote = styled.p`
   font-family: 'Roboto';

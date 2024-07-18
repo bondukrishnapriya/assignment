@@ -52,7 +52,7 @@ class NavigationBar extends Component {
                 <NavLink to="/">
                   <NavLinkContainer
                     key="home"
-                    bgColor={(activeTab = 'Home' ? activeTabBg : 'none')}
+                    bgColor={activeTab === 'Home' ? activeTabBg : 'none'}
                     onClick={onClickTabHome}
                   >
                     <AiFillHome
@@ -119,7 +119,7 @@ class NavigationBar extends Component {
                   />
                 </ContactIcons>
                 <ContactNote color={textColor}>
-                  Enjoy! Now to see your channels and recomendations!
+                  Enjoy! Now to see your channels and recommendations!
                 </ContactNote>
               </ContactInfo>
             </NavigationLgContainer>
@@ -136,7 +136,7 @@ class NavigationBar extends Component {
                   <HiFire
                     size={30}
                     onClick={onClickTabTrending}
-                    color={activeTab === 'Trending' ? '3ff0b37' : '#909090'}
+                    color={activeTab === 'Trending' ? '#ff0b37' : '#909090'}
                   />
                 </NavLink>
                 <NavLink to="/gaming">
@@ -155,7 +155,7 @@ class NavigationBar extends Component {
   )
 
   render() {
-    return <>{this.renderTabItems}</>
+    return <>{this.renderTabItems()}</>
   }
 }
 export default NavigationBar

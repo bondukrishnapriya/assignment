@@ -17,6 +17,7 @@ class Login extends Component {
   onChangeHandler = event => {
     this.setState({[event.target.name]: event.target.value})
   }
+
   onChangeUsername = event => {
     this.setState({username: event.target.value})
   }

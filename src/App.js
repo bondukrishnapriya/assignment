@@ -80,7 +80,7 @@ class App extends Component {
             path="/videos/:id"
             component={VideoDetailView}
           />
-          <ProtectedRoute exact path="/trending" componet={TrendingVideos} />
+          <ProtectedRoute exact path="/trending" component={TrendingVideos} />
           <ProtectedRoute exact path="/gaming" component={GamingVideos} />
           <ProtectedRoute exact path="/saved-videos" component={SavedVideos} />
           <Route path="/not-found" component={NotFound} />
